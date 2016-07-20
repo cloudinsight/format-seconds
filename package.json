@@ -30,7 +30,7 @@
     "webpack": "^1.13.1"
   },
   "files": [
-    "lib",
+    "dist",
     "README.md"
   ]
 }
