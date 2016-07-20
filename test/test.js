@@ -6,8 +6,8 @@ describe('convert', function () {
   dataset.forEach(function (item) {
     var actual = item[0];
     var expected = item[1];
-    it(`${actual} to ${expected}`, ()=> {
+    it(actual + ' to ' + expected, function () {
       equal(convert(actual), expected)
-    })
+    });
   });
 });
