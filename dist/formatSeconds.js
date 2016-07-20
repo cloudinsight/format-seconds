@@ -79,6 +79,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return (number / 3600).toFixed(2) + " h";
 	  } else if (absolute >= 1) {
 	    return (number * 1).toFixed(2) + " s";
+	  } else if (number === 0) {
+	    return '0';
 	  }
 
 	  var unitIndex = 0 - Math.ceil((0, _log2.default)(absolute) / 3);

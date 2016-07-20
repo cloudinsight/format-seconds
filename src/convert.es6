@@ -26,6 +26,8 @@ const convert = number => {
     return `${(number / 3600).toFixed(2)} h`
   } else if (absolute >= 1) {
     return `${(number * 1).toFixed(2)} s`
+  } else if (number === 0) {
+    return '0';
   }
 
   const unitIndex = 0 - Math.ceil(log10(absolute) / 3);
