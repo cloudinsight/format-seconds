@@ -1,7 +1,6 @@
 # format-seconds
 [![](https://img.shields.io/travis/cloudinsight/format-seconds.svg)](https://travis-ci.org/cloudinsight/format-seconds)
-[![](https://img.shields.io/npm/v/cloudinsight.svg)](https://www.npmjs.com/package/format-seconds)
-[![](https://img.shields.io/coveralls/cloudinsight/vis-bonjour-network.svg)](https://coveralls.io/github/cloudinsight/format-seconds)
+[![](https://img.shields.io/npm/v/format-seconds.svg)](https://www.npmjs.com/package/format-seconds)
 [![](https://img.shields.io/npm/dm/format-seconds.svg)](http://npm-stat.com/charts.html?package=format-seconds)
 [![](https://img.shields.io/npm/l/format-seconds.svg)](https://github.com/cloudinsight/format-seconds/blob/master/LICENSE)
 
