@@ -1,0 +1,32 @@
+{
+  "name": "format-seconds",
+  "version": "0.0.0",
+  "description": "Format seconds to only one unit",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha",
+    "compile": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudinsight/format-seconds.git"
+  },
+  "keywords": [
+    "format",
+    "seconds",
+    "duration"
+  ],
+  "author": "cloudinsight",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cloudinsight/format-seconds/issues"
+  },
+  "homepage": "https://github.com/cloudinsight/format-seconds#readme",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "mocha": "^2.5.3",
+    "webpack": "^1.13.1"
+  }
+}
