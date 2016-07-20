@@ -4,10 +4,12 @@
 [![](https://img.shields.io/npm/dm/format-seconds.svg)](http://npm-stat.com/charts.html?package=format-seconds)
 [![](https://img.shields.io/npm/l/format-seconds.svg)](https://github.com/cloudinsight/format-seconds/blob/master/LICENSE)
 
-Format seconds to readable text
+> Format duration in seconds to readable string.
 
-Partial implementation (10<sup>4</sup> ~ 10<sup>-24</sup>)
+A partial implementation (10<sup>4</sup> ~ 10<sup>-24</sup>)
  of https://en.wikipedia.org/wiki/Orders_of_magnitude_(time)
+
+## Examples
  
 |  input |  expected  |
 |:-------|:-----------|
@@ -21,15 +23,20 @@ Partial implementation (10<sup>4</sup> ~ 10<sup>-24</sup>)
 | 1 |  1.00 s  |
  
 ## Installation
-  
-```
+
+*For Node.js:*
+
+```sh
 npm install format-seconds
-```        
+```
+
+*For Browsers:*
+
+Add a script tag which points to `formatSeconds.min.js`
 
 ## Usage
 
-```
-import formatSeconds from 'format-seconds';
+```js
 formatSeconds(0.042); // 0.042ms
 ```
 
