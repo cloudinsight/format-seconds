@@ -24,7 +24,7 @@ const convert = number => {
   const absolute = Math.abs(number);
   if (absolute > 10000) {
     return `${(number / 3600).toFixed(2)} h`
-  } else if (absolute > 1) {
+  } else if (absolute >= 1) {
     return `${(number * 1).toFixed(2)} s`
   }
 
