@@ -10,6 +10,10 @@ A partial implementation (10<sup>4</sup> ~ 10<sup>-24</sup>)
  of https://en.wikipedia.org/wiki/Orders_of_magnitude_(time)
 
 ## Examples
+
+[DEMO](http://codepen.io/longtian/pen/GqxRor?editors=1010)
+
+## Test cases
  
 |  input |  expected  |
 |:-------|:-----------|
