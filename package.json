@@ -1,11 +1,11 @@
 {
   "name": "format-seconds",
   "version": "0.0.1",
-  "description": "Format seconds to only one unit",
-  "main": "lib/index.js",
+  "description": "Format duration in seconds to readable string",
+  "main": "dist/formatSeconds.js",
   "scripts": {
     "test": "mocha",
-    "compile": "webpack"
+    "dist": "webpack --optimize-minimize --output-filename formatSeconds.min.js  && webpack --output-filename formatSeconds.js"
   },
   "repository": {
     "type": "git",

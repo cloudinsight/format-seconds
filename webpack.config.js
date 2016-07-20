@@ -1,9 +1,7 @@
 module.exports = {
   entry: './src/convert',
   output: {
-    path: './lib',
-    pathinfo: true,
-    filename: 'index.js',
+    path: './dist',
     library: 'formatSeconds',
     libraryTarget: "umd"
   },

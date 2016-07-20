@@ -52,14 +52,11 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/*!*************************!*\
-  !*** ./src/convert.es6 ***!
-  \*************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _log = __webpack_require__(/*! ./log10 */ 1);
+	var _log = __webpack_require__(1);
 
 	var _log2 = _interopRequireDefault(_log);
 
@@ -94,9 +91,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 1 */
-/*!***********************!*\
-  !*** ./src/log10.es6 ***!
-  \***********************/
 /***/ function(module, exports) {
 
 	"use strict";
