@@ -54,11 +54,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	var _log = __webpack_require__(1);
 
 	var _log2 = _interopRequireDefault(_log);
+
+	var _trimZero = __webpack_require__(2);
+
+	var _trimZero2 = _interopRequireDefault(_trimZero);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -76,9 +80,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	  var absolute = Math.abs(number);
 	  if (absolute > 10000) {
-	    return (number / 3600).toFixed(2) + " h";
+	    return (0, _trimZero2.default)((number / 3600).toFixed(2)) + ' h';
 	  } else if (absolute >= 1) {
-	    return (number * 1).toFixed(2) + " s";
+	    return (0, _trimZero2.default)((number * 1).toFixed(2)) + ' s';
 	  } else if (number === 0) {
 	    return '0';
 	  }
@@ -86,7 +90,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var unitIndex = 0 - Math.ceil((0, _log2.default)(absolute) / 3);
 	  var scaleFactor = Math.pow(10, (1 + unitIndex) * 3);
 
-	  return (number * scaleFactor).toFixed(2) + " " + UNITS[unitIndex];
+	  return (number * scaleFactor).toFixed(2) + ' ' + UNITS[unitIndex];
 	};
 
 	module.exports = convert;
@@ -108,6 +112,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return Math.log(x) * Math.LOG10E;
 	};
 	exports.default = log10;
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	/**
+	 * 移除小数末尾的 0
+	 * @param string
+	 * @return {*}
+	 */
+	var trimZero = function trimZero(string) {
+	  if (string && string.indexOf('.') !== -1) {
+	    return string.replace(/0+$/, '').replace(/\.$/, '');
+	  }
+	  return string;
+	};
+
+	exports.default = trimZero;
 
 /***/ }
 /******/ ])

@@ -1,4 +1,5 @@
 import log10 from './log10';
+import trimZero from './trimZero';
 
 const UNITS = [
   "ms",
@@ -23,9 +24,9 @@ const convert = number => {
   }
   const absolute = Math.abs(number);
   if (absolute > 10000) {
-    return `${(number / 3600).toFixed(2)} h`
+    return `${trimZero((number / 3600).toFixed(2))} h`
   } else if (absolute >= 1) {
-    return `${(number * 1).toFixed(2)} s`
+    return `${trimZero((number * 1).toFixed(2))} s`
   } else if (number === 0) {
     return '0';
   }
