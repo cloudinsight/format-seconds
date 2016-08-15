@@ -1,6 +1,6 @@
 {
   "name": "format-seconds",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Format duration in seconds to readable string",
   "main": "dist/formatSeconds.js",
   "scripts": {
