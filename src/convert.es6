@@ -34,7 +34,7 @@ const convert = number => {
   const unitIndex = 0 - Math.ceil(log10(absolute) / 3);
   const scaleFactor = Math.pow(10, (1 + unitIndex) * 3);
 
-  return `${(number * scaleFactor).toFixed(2)} ${UNITS[unitIndex]}`
+  return `${trimZero((number * scaleFactor).toFixed(2))} ${UNITS[unitIndex]}`
 };
 
 module.exports = convert;

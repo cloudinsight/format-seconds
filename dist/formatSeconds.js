@@ -90,7 +90,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var unitIndex = 0 - Math.ceil((0, _log2.default)(absolute) / 3);
 	  var scaleFactor = Math.pow(10, (1 + unitIndex) * 3);
 
-	  return (number * scaleFactor).toFixed(2) + ' ' + UNITS[unitIndex];
+	  return (0, _trimZero2.default)((number * scaleFactor).toFixed(2)) + ' ' + UNITS[unitIndex];
 	};
 
 	module.exports = convert;
